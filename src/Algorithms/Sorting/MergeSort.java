@@ -1,6 +1,10 @@
 package Algorithms.Sorting;
 
 public class MergeSort {
+    /*
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+     */
     private static void merge(int[] array, int left, int mid, int right) {
         int n1 = mid - left + 1; // left arr size
         int n2 = right - mid; // right arr size
@@ -49,6 +53,10 @@ public class MergeSort {
         }
     }
 
+    /*
+        Time Complexity: O(n log n)
+        Space Complexity: O(n)
+     */
     public static void mergeSort(int[] array, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
