@@ -5,13 +5,13 @@ public class SquareMatrixMultiply {
         Time Complexity: O(n^3)
         Space Complexity: O(n^2)
      */
-    public static int[][] squareMatrixMultiply(int[][] A, int[][] B) {
+    public static double[][] compute(double[][] A, double[][] B) {
         if (A.length != B.length) {
             throw new IllegalArgumentException("Matrices must be the same dimension");
         }
 
         int n = A.length;
-        int[][] c = new int[n][n];
+        double[][] c = new double[n][n];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
