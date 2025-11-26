@@ -5,7 +5,7 @@ package Algorithms.Sorting;
     Space Complexity: O(1)
  */
 public class InsertionSort {
-    public static void insertionSort(int[] array) {
+    public static void sort(int[] array) {
         for (int j = 1; j < array.length; j++) {
             int key = array[j];
             int i = j - 1;
