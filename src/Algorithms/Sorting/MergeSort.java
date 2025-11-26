@@ -57,11 +57,11 @@ public class MergeSort {
         Time Complexity: O(n log n)
         Space Complexity: O(n)
      */
-    public static void mergeSort(int[] array, int left, int right) {
+    public static void sort(int[] array, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
-            mergeSort(array, left, mid);
-            mergeSort(array, mid + 1, right);
+            sort(array, left, mid);
+            sort(array, mid + 1, right);
             merge(array, left, mid, right);
         }
     }
