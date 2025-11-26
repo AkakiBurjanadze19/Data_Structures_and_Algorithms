@@ -8,7 +8,7 @@ public class InsertionSortTest {
 
         System.out.println("array before sorting: " + Arrays.toString(arr));
 
-        InsertionSort.insertionSort(arr);
+        InsertionSort.sort(arr);
 
         System.out.println("array after sorting: " + Arrays.toString(arr));
     }

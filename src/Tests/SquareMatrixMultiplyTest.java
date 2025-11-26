@@ -4,15 +4,15 @@ import Algorithms.Matrix.SquareMatrixMultiply;
 
 public class SquareMatrixMultiplyTest {
     public static void main(String[] args) {
-        int[][] matrix1 = {
+        double[][] matrix1 = {
                 {1, 2},
                 {4, 5}
         };
-        int[][] matrix2 = {
+        double[][] matrix2 = {
                 {1, 2},
                 {4, 5}
         };
 
-        Matrix.printMatrix(SquareMatrixMultiply.squareMatrixMultiply(matrix1, matrix2));
+        Matrix.printMatrix(SquareMatrixMultiply.compute(matrix1, matrix2));
     }
 }

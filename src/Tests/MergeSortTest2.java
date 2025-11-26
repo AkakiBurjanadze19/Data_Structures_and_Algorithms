@@ -8,7 +8,7 @@ public class MergeSortTest2 {
 
         System.out.println("array before sorting: " + Arrays.toString(arr));
 
-        MergeSort2.mergeSort(arr, 0, arr.length - 1);
+        MergeSort2.sort(arr, 0, arr.length - 1);
 
         System.out.println("array after sorting: " + Arrays.toString((arr)));
     }
