@@ -5,7 +5,7 @@ package Algorithms.Searching;
     Space Complexity: O(1)
  */
 public class LinearSearch {
-    public static int linearSearch(int[] array, int element) {
+    public static int search(int[] array, int element) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == element) {
                 return i;
