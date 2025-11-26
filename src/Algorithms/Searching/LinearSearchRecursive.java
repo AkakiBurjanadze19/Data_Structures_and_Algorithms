@@ -1,7 +1,7 @@
 package Algorithms.Searching;
 
 public class LinearSearchRecursive {
-    public static int linearSearch(int[] array, int element, int i) {
+    public static int search(int[] array, int element, int i) {
         // base case
         if (i >= array.length) {
             return -1;
@@ -12,6 +12,6 @@ public class LinearSearchRecursive {
         }
 
         i++;
-        return linearSearch(array, element, i);
+        return search(array, element, i);
     }
 }
