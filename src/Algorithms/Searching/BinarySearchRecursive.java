@@ -5,7 +5,7 @@ package Algorithms.Searching;
     Space Complexity: O(1)
  */
 public class BinarySearchRecursive {
-    public static int binarySearch(int[] array, int element, int left, int right) {
+    public static int search(int[] array, int element, int left, int right) {
         // base case
         if (left > right) {
             return -1;
@@ -15,9 +15,9 @@ public class BinarySearchRecursive {
         if (array[mid] == element) {
             return mid;
         } else if (array[mid] < element) {
-            return binarySearch(array, element, mid + 1, right);
+            return search(array, element, mid + 1, right);
         } else {
-            return binarySearch(array, element, left, mid - 1);
+            return search(array, element, left, mid - 1);
         }
     }
 }
