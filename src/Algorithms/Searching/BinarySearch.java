@@ -5,7 +5,7 @@ package Algorithms.Searching;
     Space Complexity: O(1)
  */
 public class BinarySearch {
-    public static int binarySearch(int[] array, int element) {
+    public static int search(int[] array, int element) {
         int left = 0;
         int right = array.length - 1;
 
